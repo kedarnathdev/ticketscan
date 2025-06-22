@@ -24,4 +24,9 @@ public class TicketScanUserController {
         return ticketScanUserServiceImpl.loginUser(user);
     }
 
+    @GetMapping("/test")
+    public Mono<String> test() {
+        return Mono.just("TicketScan User Service is running!");
+    }
+
 }
