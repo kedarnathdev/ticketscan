@@ -3,13 +3,11 @@ package com.ticketscan.ticketscan.controller;
 import com.ticketscan.ticketscan.dto.TicketScanUser;
 import com.ticketscan.ticketscan.service.TicketScanUserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("/api/user")
 public class TicketScanUserController {
 

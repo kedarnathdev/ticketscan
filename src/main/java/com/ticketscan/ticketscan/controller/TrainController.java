@@ -11,6 +11,7 @@ import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/api/trains")
+@CrossOrigin(origins = "*")
 public class TrainController {
 
 	@Autowired
