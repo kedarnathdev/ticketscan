@@ -26,6 +26,7 @@ public class TicketScanUserController {
 
     @GetMapping("/test")
     public Mono<String> test() {
+        System.out.println("TicketScan User Service is running!");
         return Mono.just("TicketScan User Service is running!");
     }
 
